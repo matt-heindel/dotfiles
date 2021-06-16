@@ -18,4 +18,5 @@ set shiftround            " always indent/outdent to the nearest tabstop
 set expandtab             " use spaces instead of tabs
 set smarttab              " use tabs at the start of a line, spaces elsewhere
 set tw=72                 " wrap lines at 72 characters
-
+set spelllang=en
+set spell                 " enable spell check
