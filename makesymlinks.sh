@@ -8,6 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
+# update files to match dir
 files="bashrc vimrc bash_profile bash_aliases gitconfig"    # list of files/folders to symlink in homedir
 
 ##########
