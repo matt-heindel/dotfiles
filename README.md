@@ -45,7 +45,7 @@ When tracking a new file or removing a file from tracking, a few extra step are 
     vim ~/dotfiles/makesymlinks.sh  
     ```
 1. Scroll to the `Variables` section and update the line `files="..."` to be a space seperated list of all dotfiles in the dotfiles directory  
-  ![image of updating makesymlinks.sh files variable](https://github.com/matt-heindel/dotfiles/images/updatesymlinks.png)  
+  ![image of updating makesymlinks.sh files variable](https://github.com/matt-heindel/dotfiles/blob/main/images/updatesymlinks.png)  
   Remember in vim pressing `i` enters insert mode
 1. Close and save with `Esc` then `:wq`
 1. `git push`
