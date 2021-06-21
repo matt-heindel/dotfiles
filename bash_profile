@@ -1,16 +1,23 @@
+
+# notify user that profile was loaded
 echo "executed ~/.bash_profile"
 
+# call ~/.bashrc if found
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
 
-# Navigate to most commonly used folder
+# navigate to most commonly used folder
 cd HackReactor
 
+# load nvm
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
+# set vim as default editor
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+# for mac don't notify user to use zsh
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
