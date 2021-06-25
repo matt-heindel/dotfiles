@@ -22,5 +22,8 @@ alias gp='git push origin master'
 alias open='explorer.exe'
 
 # install pomander for ESLint pre-commit linting
-alias pom='curl -s https://raw.githubusercontent.com/hackreactor-labs/pomander/master/bin/install | bash'
+alias pom='curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash'
+
+# navigation
+alias hr='cd ~/HackReactor'
 
