@@ -26,4 +26,6 @@ alias pom='curl -s https://raw.githubusercontent.com/reactorcore/pomander/master
 
 # navigation
 alias hr='cd ~/HackReactor'
+alias toy='cd ~/HackReactor/hr-rfp54-toy-problems'
+alias submit='open https://github.com/hackreactor/hr-rfp54-toy-problems/compare/matt-heindel...matt-heindel:master'
 
