@@ -8,7 +8,8 @@ alias aliases='cat ~/.bash_aliases'
 
 # list files
 alias l='ls -CFt' # list files in columns, classified, sorted by most recent 
-alias la='l -A'
+alias la='l -A'  # list all files including hidden
+cl() { cd "$@" && l; } # change directory and list files in custom format
 
 # git commands
 alias gml='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short --author="Matt Heindel"'
