@@ -7,7 +7,7 @@ echo
 alias aliases='cat ~/.bash_aliases'
 
 # list files
-alias l='ls -CF'
+alias l='ls -CFt' # list files in columns, classified, sorted by most recent 
 alias la='l -A'
 
 # git commands
