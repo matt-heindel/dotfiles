@@ -26,7 +26,14 @@ alias open='explorer.exe'
 alias pom='curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash'
 
 # navigation
-alias hr='cd ~/HackReactor'
+alias hr='cl ~/HackReactor' 
 alias toy='cd ~/HackReactor/hr-rfp54-toy-problems'
+
+# navigate to pull request for submitting toy problem
 alias submit='open https://github.com/hackreactor/hr-rfp54-toy-problems/compare/matt-heindel...matt-heindel:master'
+
+# managing server ports
+lport() { lsof -t -i:"$@"; } # list processes on specified port number
+killport() { kill -9 $(lsof -t -i:"$@"); } # kill process on specified port number
+
 
