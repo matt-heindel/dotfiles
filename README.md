@@ -18,7 +18,7 @@ Dotfiles (like ~/.vimrc, ~/.bashrc, etc. in your home directory) manage the conf
 - Automatic line wrapping in vim
 - Minimal bash prompt
 - Alias `gml` prints a pretty one-line format of `git log` filtered to only my commits
-  ![image of filtered git log alias](https://github.com/matt-heindel/dotfiles/blob/main/images/gml.png)  
+  ![image of filtered git log alias](images/alias-gml.png)  
 
 ## Complete Guide
 
@@ -54,7 +54,7 @@ When tracking a new file or removing a file from tracking, a few extra step are 
     ```
 
 1. Scroll to the *Variables* section and update the line `files="..."` to be a space separated list of all dotfiles in the specified directory  
-  ![image of updating makesymlinks.sh files variable](https://github.com/matt-heindel/dotfiles/blob/main/images/updatesymlinks.png)  
+  ![image of updating makesymlinks.sh files variable](images/updatesymlinks.png)  
   Remember in vim pressing `i` enters insert mode
 1. Close and save with `Esc` then `:wq`
 1. `git commit` with a descriptive message of changes
