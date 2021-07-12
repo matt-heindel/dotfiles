@@ -15,10 +15,17 @@ Dotfiles (like ~/.vimrc, ~/.bashrc, etc. in your home directory) manage the conf
 ## My Favorite Configurations
 
 - Spell check in vim (no more commit message typos!)
-- Automatic line wrapping in vim
 - Minimal bash prompt
+- Function `killport` for managing port processes. See my [blog post](https://dev.to/mattheindel/fixing-nodemon-error-listen-eaddrinuse-address-in-use-3ic2) for more details on this.
 - Alias `gml` prints a pretty one-line format of `git log` filtered to only my commits
-  ![image of filtered git log alias](images/alias-gml.png)  
+
+```bash
+$ gml
+* f074c20 2021-07-07 | Update `README` image links (HEAD -> main, origin/main) [Matt Heindel]
+* 2d32e40 2021-07-05 | Add alias functions for managing server ports [Matt Heindel]
+* ac0df26 2021-07-04 | Add welcome message that displays suggested files on opening bash [Matt Heindel]
+* f728b13 2021-07-04 | New alias `cl` combines `cd` and `ls` commands [Matt Heindel]
+```
 
 ## Complete Guide
 
@@ -54,7 +61,18 @@ When tracking a new file or removing a file from tracking, a few extra step are 
     ```
 
 1. Scroll to the *Variables* section and update the line `files="..."` to be a space separated list of all dotfiles in the specified directory  
-  ![image of updating makesymlinks.sh files variable](images/updatesymlinks.png)  
+
+  ```bash
+########## Variables
+
+dir=~/dotfiles                    # dotfiles directory
+olddir=~/dotfiles_old             # old dotfiles backup directory
+# update files to match dir
+files="bashrc vimrc bash_profile bash_aliases gitconfig"    # list of files/folders to symlink in homedir
+
+##########
+  ```
+
   Remember in vim pressing `i` enters insert mode
 1. Close and save with `Esc` then `:wq`
 1. `git commit` with a descriptive message of changes
