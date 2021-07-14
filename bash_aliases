@@ -43,3 +43,11 @@ killport() { kill -9 $(lsof -t -i:"$@"); } # kill process on specified port numb
 
 # dev environment set up
 alias install-babel="npm install --save-dev @babel/core @babel/cli @babel/preset-react"
+
+# mysql
+mysql-start() {
+  sudo service mysql start
+  sudo service mysql status
+  mysql -u root -p
+}
+
