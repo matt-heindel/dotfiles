@@ -25,6 +25,7 @@ $ gml
 * 2d32e40 2021-07-05 | Add alias functions for managing server ports [Matt Heindel]
 * ac0df26 2021-07-04 | Add welcome message that displays suggested files on opening bash [Matt Heindel]
 * f728b13 2021-07-04 | New alias `cl` combines `cd` and `ls` commands [Matt Heindel]
+* 9462a79 2021-07-04 | Modify alias `l` to sort files by most recent modification [Matt Heindel]
 ```
 
 ## Complete Guide

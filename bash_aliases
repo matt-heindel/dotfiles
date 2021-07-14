@@ -15,9 +15,14 @@ cl() { cd "$@" && l; } # change directory and list files in custom format
 alias gml='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short --author="Matt Heindel"'
 alias gl='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
 alias gs='git status'
+alias gd='git diff'
 alias ga='git add'
 alias gc='git commit'
-alias gp='git push origin master'
+alias gp='git push'
+alias gpom='git push origin master'
+alias gbv='git branch -v'
+alias grv='git remote -v'
+alias gco='git checkout'
 
 # launch file explorer / default browser
 alias open='explorer.exe'
@@ -36,4 +41,5 @@ alias submit='open https://github.com/hackreactor/hr-rfp54-toy-problems/compare/
 lport() { lsof -t -i:"$@"; } # list processes on specified port number
 killport() { kill -9 $(lsof -t -i:"$@"); } # kill process on specified port number
 
-
+# dev environment set up
+alias install-babel="npm install --save-dev @babel/core @babel/cli @babel/preset-react"
