@@ -1,6 +1,7 @@
 
 # notify user that aliases were loaded
 echo "executed ~/.bash_aliases"
+echo "use command 'aliases' to see a list of all aliases"
 echo
 
 # remind user of set aliases
