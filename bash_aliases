@@ -8,9 +8,11 @@ echo
 alias aliases='cat ~/.bash_aliases'
 
 # list files
+alias x='clear'
 alias l='ls -CFt' # list files in columns, classified, sorted by most recent 
 alias la='l -A'  # list all files including hidden
 cl() { cd "$@" && l; } # change directory and list files in custom format
+
 
 # git commands
 alias gml='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short --author="Matt Heindel"'
@@ -25,6 +27,14 @@ alias gpom='git push origin master'
 alias gbv='git branch -v'
 alias grv='git remote -v'
 alias gco='git checkout'
+# update and merge main branch into a feature branch
+# make sure to specify feature branch after command
+gup() {
+  git checkout main
+  git pull
+  git checkout "$@"
+  git merge main
+}
 
 # launch file explorer / default browser
 alias open='explorer.exe'
@@ -32,7 +42,7 @@ alias open='explorer.exe'
 # install pomander for ESLint pre-commit linting
 alias pom='curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash'
 
-# navigation
+# navigating to common file paths
 alias hr='cl ~/HackReactor' 
 alias toy='cd ~/HackReactor/hr-rfp54-toy-problems'
 
