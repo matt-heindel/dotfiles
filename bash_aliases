@@ -9,7 +9,7 @@ alias aliases='cat ~/.bash_aliases'
 
 # list files
 alias x='clear'
-alias l='ls -CFt' # list files in columns, classified, sorted by most recent 
+alias l='ls -CFt' # list files in columns, classified, sorted by most recent
 alias la='l -A'  # list all files including hidden
 cl() { cd "$@" && l; } # change directory and list files in custom format
 
@@ -52,7 +52,7 @@ alias open='explorer.exe'
 alias pom='curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash'
 
 # navigating to common file paths
-alias hr='cl ~/HackReactor' 
+alias hr='cl ~/HackReactor'
 alias toy='cd ~/HackReactor/hr-rfp54-toy-problems'
 
 # navigate to pull request for submitting toy problem
