@@ -22,8 +22,9 @@ alias gl20='gl -n 20'
 alias gs='git status'
 alias gf='git fetch'
 alias gsw='git show'
+gswh() { git show HEAD"$@"; }
 alias gd='git diff'
-alias gdh='git diff HEAD'
+gdh() { git diff HEAD"$@"; }
 alias ga='git add'
 alias gc='git commit'
 alias gca='git commit -a'
