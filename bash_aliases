@@ -9,7 +9,7 @@ alias aliases='cat ~/.bash_aliases'
 
 # list files
 alias x='clear'
-alias l='ls -CFt' # list files in columns, classified, sorted by most recent
+alias l='ls -CFtG' # list files in columns, classified, sorted by most recent, colorized
 alias la='l -A'  # list all files including hidden
 cl() { cd "$@" && l; } # change directory and list files in custom format
 
