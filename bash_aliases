@@ -29,9 +29,8 @@ alias ga='git add'
 alias gc='git commit'
 alias gca='git commit -a'
 alias gac='git add -A && git commit -m'
-alias gp='git push'
-alias gpo='git push origin'
-alias gpom='git push origin master'
+alias gph='git push'
+alias gpho='git push origin'
 alias gpl='git pull'
 alias gplo='git pull origin'
 alias gbv='git branch -v'
@@ -55,6 +54,7 @@ alias pom='curl -s https://raw.githubusercontent.com/reactorcore/pomander/master
 # navigating to common file paths
 alias hr='cl ~/HackReactor'
 alias toy='cd ~/HackReactor/hr-rfp54-toy-problems'
+alias ..='cl ..'
 
 # navigate to pull request for submitting toy problem
 alias submit='open https://github.com/hackreactor/hr-rfp54-toy-problems/compare/matt-heindel...matt-heindel:master'
