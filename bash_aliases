@@ -33,6 +33,7 @@ alias gph='git push'
 alias gpho='git push origin'
 alias gpl='git pull'
 alias gplo='git pull origin'
+alias gplu='git pull upstream'
 alias gbv='git branch -v'
 alias grv='git remote -v'
 alias gco='git checkout'
@@ -57,7 +58,10 @@ alias toy='cd ~/HackReactor/hr-rfp54-toy-problems'
 alias ..='cl ..'
 
 # navigate to pull request for submitting toy problem
-alias submit='open https://github.com/hackreactor/hr-rfp54-toy-problems/compare/matt-heindel...matt-heindel:master'
+submit() {
+  gpho master;
+  open https://github.com/hackreactor/hr-rfp54-toy-problems/compare/matt-heindel...matt-heindel:master;
+}
 
 # managing server ports
 lport() { lsof -t -i:"$@"; } # list processes on specified port number
