@@ -26,6 +26,7 @@ gswh() { git show HEAD"$@"; }
 alias gd='git diff'
 gdh() { git diff HEAD"$@"; }
 alias ga='git add'
+alias grs='git restore --staged'
 alias gc='git commit'
 alias gca='git add -A && git commit'
 alias gcam='git add -A && git commit -m'
