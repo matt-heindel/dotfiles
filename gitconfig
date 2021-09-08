@@ -3,7 +3,7 @@
   email = mheindel94@gmail.com
 [core]
   editor = vim
-  autocrlf = input
+	autocrlf = false
   safecrlf = true
 [alias]
   type = cat-file -t
