@@ -14,7 +14,6 @@ alias lfs='ls -sSh1' # list files sorted by and displaying size in human readabl
 alias la='l -A'  # list all files including hidden
 cl() { cd "$@" && l; } # change directory and list files in custom format
 
-
 # git commands
 alias gml='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short --author="Matt Heindel"'
 alias gl='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
@@ -39,20 +38,9 @@ alias gplu='git pull upstream'
 alias gbv='git branch -v'
 alias grv='git remote -v'
 alias gco='git checkout'
-# update and merge main branch into a feature branch
-# make sure to specify feature branch after command
-gup() {
-  git checkout main
-  git pull
-  git checkout "$@"
-  git merge main
-}
 
 # launch file explorer / default browser
 alias open='explorer.exe'
-
-# install pomander for ESLint pre-commit linting
-alias pom='curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash'
 
 # navigating to common file paths
 alias hr='cl ~/HackReactor'
@@ -68,14 +56,3 @@ submit() {
 # managing server ports
 lport() { lsof -t -i:"$@"; } # list processes on specified port number
 killport() { kill -9 $(lsof -t -i:"$@"); } # kill process on specified port number
-
-# dev environment set up
-alias install-babel="npm install --save-dev @babel/core @babel/cli @babel/preset-react"
-
-# mysql
-mysql-start() {
-  sudo service mysql start
-  sudo service mysql status
-  mysql -u root -p
-}
-
