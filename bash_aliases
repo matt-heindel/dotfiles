@@ -44,7 +44,8 @@ alias open='explorer.exe'
 
 # navigating to common file paths
 alias hr='cl ~/HackReactor'
-alias toy='cd ~/HackReactor/hr-rfp54-toy-problems'
+alias clcode='cl ~/code'
+alias toy='cd ~/code/toy-problems'
 alias ..='cl ..'
 
 # navigate to pull request for submitting toy problem
